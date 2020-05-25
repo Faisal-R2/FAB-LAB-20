@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<link href="styles/style.css" type="text/css" rel="stylesheet" >
+		<title>FAB LAB  - FAISALUL-REHMAN </title>
+		<style>
+			.mycodingfont
+			{
+					font-family: "Courier New", Courier, monospace	;
+					border-style: solid;
+					border-width:1px;
+					width:80%;
+					padding:30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div id="header">
+				<div id="logo">
+					<a href="http://fab.cba.mit.edu/"><img src= "graphics/logo.png"></a>
+				</div>
+				<div id="header-title">
+					<div id="header-title-text">
+						<div>FAB ACADEMY 2020</div>
+						<div id="bcn">  </div>
+					</div>
+				</div>
+				<div id="bcn-logo">
+					<a href="http://fabacademy.org"><img src="graphics/fab-academy.png" /></a>
+				</div>
+			</div>
+			<hr />
+			<div id="nav-bar">
+				
+					<div class="link"><a href="index.html">Home</a></div><div class="headerDivider" ></div>
+					<div class="link"><a href="final_project.html">Final Project</a></div><div class="headerDivider" ></div>
+					<div class="link"><a href="aboutme.html">About Me</a></div>
+					<div class="clear"></div>
+				
+			</div>
+			<hr />
+			<div id="MainContainer">
+				<div id="container-title">Input Devices</div>
+				<div id="ImagesContainer">
+
+				<br> 
+					<h3> Assignment</h3>
+				<ul>
+					<li>Add a sensor to a microcontroller board that you have designed and read it.</li>
+				</ul>
+				<p>In this week I have palned to use the PIR sensor to detect the Object like human. when object is near to the PIR then It indicate the LED that Object is Near to the Devices.</p>
+				<h3> What is PIR Sensor.</h3>
+				<p> PIR sensor detects a human being moving around within approximately 10m from the sensor. This is an average value, as the actual detection range is between 5m and 12m.PIR are fundamentally made of a pyro electric sensor, which can detect levels of infrared radiation. For numerous essential projects or items that need to discover when an individual has left or entered the area. PIR sensors are incredible, they are flat control and minimal effort, have a wide lens range, and are simple to interface with.</p>
+				<p> Most PIR sensors have a 3-pin connection at the side or bottom. One pin will be ground, another will be signal and the last pin will be power. Power is usually up to 5V. Sometimes bigger modules don’t have direct output and instead just operate a relay which case there is ground, power and the two switch associations. Interfacing PIR with microcontroller is very easy and simple. The PIR acts as a digital output so all you need to do is listening for the pin to flip high or low. The motion can be detected by checking for a high signal on a single I/O pin. Once the sensor warms up the output will remain low until there is motion, at which time the output will swing high for a couple of seconds, then return low. If motion continues the output will cycle in this manner until the sensors line of sight of still again. The PIR sensor needs a warm-up time with a specific end goal to capacity fittingly. This is because of the settling time included in studying nature’s domain. This could be anyplace from 10-60 seconds. for more Details click <a href="https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/how-pirs-work"> <b> HERE </b> </a></p>
+				<h3>How PIRs Work</h3>
+				<p> PIR sensors are more complicated than many of the other sensors explained in these tutorials (like photocells, FSRs and tilt switches) because there are multiple variables that affect the sensors input and output. To begin explaining how a basic sensor works, we'll use this rather nice diagram.</p>
+
+                <p> The PIR sensor itself has two slots in it, each slot is made of a special material that is sensitive to IR. The lens used here is not really doing much and so we see that the two slots can 'see' out past some distance (basically the sensitivity of the sensor). When the sensor is idle, both slots detect the same amount of IR, the ambient amount radiated from the room or walls or outdoors. When a warm body like a human or animal passes by, it first intercepts one half of the PIR sensor, which causes a positive differential change between the two halves. When the warm body leaves the sensing area, the reverse happens, whereby the sensor generates a negative differential change. These change pulses are what is detected.</p>
+                <center><img src="graphics/pir.jpg" style="width:60%"> </center>
+                <h3> Lenses </h3>
+                <p>PIR sensors are rather generic and for the most part vary only in price and sensitivity. Most of the real magic happens with the optics. This is a pretty good idea for manufacturing: the PIR sensor and circuitry is fixed and costs a few dollars. The lens costs only a few cents and can change the breadth, range, sensing pattern, very easily.
+                In the diagram up top, the lens is just a piece of plastic, but that means that the detection area is just two rectangles. Usually we'd like to have a detection area that is much larger. To do that, we use a simple lens such as those found in a camera: they condenses a large area (such as a landscape) into a small one (on film or a CCD sensor). For reasons that will be apparent soon, we would like to make the PIR lenses small and thin and moldable from cheap plastic, even though it may add distortion. For this reason the sensors are actually Fresnel lenses:</p>
+                <center><img src="graphics/sensor.jpg" style="width:60%"> </center>
+
+               <h3> Areas of Applications of PIR Sensors</h3> 
+               <li> All outdoor Lights</li>
+               <li> Lift Lobby</li>
+               <li> Multi Apartment Complexes.</li>
+               <li> Common staircases.</li>
+               <li> For Basement or Covered Parking Area.</li>
+               <li> Shopping Malls</li>
+               <li> For garden lights</li>
+               <h3>Features</h3>
+               <li> Complete with PIR, Motion Detection.</li>
+               <li> Dual Element Sensor with Low Noise and High Sensitivity.</li>
+               <li> Supply Voltage – 5V.</li>
+               <li>Delay Time Adjustable.</li>
+               <li>Standard TTL Output.</li>
+
+               <h3>Interface of PIR Sensor With Uno</h3>
+               <p> I have Research for PIR so I have Found this Help ful link , its is very easy for the Learner <a href="https://www.electronicwings.com/arduino/pir-sensor-interfacing-with-arduino-uno"> <b> HERE </b> </a> </p>
+               <center><img src="graphics/piruno.jpg" style="width:60%"> </center>
+               <p> I Design the Lenardo baord in the Week of Embedded System I have replace the Uno with Leonardo Board.</p>
+               <p> Pin Interface of PIR sensor With Leonardo</p>
+               <p> PIR Has three Pins</p>
+               <li> 1.Vcc </li>
+               <li> 2.Data </li>
+               <li> 3.GND</li>
+               <h3> PIR Sesnor Interface With Leonardo</h3>
+               <li> 1.Vcc with 5V </li>
+               <li> 2.Data/ Output with Digital Pin 2 </li>
+               <li> 3.GND with Ground </li>
+               <p> This the PIR Interface with Leonardo</p>
+               <center><img src="graphics/pirleonardo.jpg" style="width:60%"> </center>
+               <p> When Sensor detect the Object then LED will blink if object is out of range then LED is Off satte.</p>
+               <p> I have design this and upload in Leonardo Borad</p>
+               <center><img src="graphics/pircode.jpg" style="width:60%"> </center>
+               <h3> Demo of the Input Devices</h3>
+               <p> In Demo I have use my Phone as Object When its Near to the Sensor the LED is blink other Voice LED goes to Trun off.</p>
+               <img src="graphics/inputweek.gif" alt=" LED blinking" style="width: 60%; display: block; margin-left: auto; margin-right: auto;"><p style="text-align:center; margin-top: 5px; font-family: Times ; font-size: 12px;"></p>
+
+               <h2> Group Assignments</h2>
+               <p> In This week for the Group Assignment we have use the Distance Sensor to Measure the Distance.So we have use the HC-SR04.So we have Interface Disatnce Sensor With Leonardo</p>
+               <h3> Ultrasonics Sensor HC-SR04</h3>
+                <p> Ultrasonic transducers and ultrasonic sensors are devices that generate or sense ultrasound energy. They can be divided into three broad categories: transmitters, receivers and transceivers. Transmitters convert electrical signals into ultrasound, receivers convert ultrasound into electrical signals, and transceivers can both transmit and receive ultrasound. In a similar way to radar and sonar, ultrasonic transducers are used in systems which evaluate targets by interpreting the reflected signals. For example, by measuring the time between sending a signal and receiving an echo the distance of an object can be calculated. Passive ultrasonic sensors are basically microphones that detect ultrasonic noise that is present under certain conditions.</p>
+                <center><img src="graphics/distancce.jpg" style="width:60%"> </center>
+                <p>The design of transducer can vary greatly depending on its use: those used for medical diagnostic purposes, for example the range-finding applications listed above, are generally lower power than those used for the purpose of changing the properties of the liquid medium, or targets immersed in the liquid medium, through chemical, biological or physical (e.g. erosive) effects. </p>
+                
+                <center><img src="graphics/dsistance.jpg" style="width:60%"> </center>
+                <p>The latter class include ultrasonic probes and ultrasonic baths, which apply ultrasonic energy to agitate particles, clean, erode, or disrupt biological cells, in a wide range of materials; See Sonication.</p>
+               
+                <center><img src="graphics/triger.jpg" style="width:60%"> </center>
+                <p>It emits an ultrasound at 40 000 Hz which travels through the air and if there is an object or obstacle on its path It will bounce back to the module. Considering the travel time and the speed of the sound you can calculate the distance.The HC-SR04 Ultrasonic Module has 4 pins, Ground, VCC, Trig and Echo. The Ground and the VCC pins of the module needs to be connected to the Ground and the 5 volts pins on the Arduino Board respectively and the trig and echo pins to any Digital I/O pin on the Arduino Board.</p>
+                <p> This the Circuit diagram of the HC-SR04 with micro Controller. for more deatil <a href="https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/"> <b> CLICK</b> </a></p>
+                <center><img src="graphics/ultra.jpg" style="width:60%"> </center>
+                <p> Distance Sesnor Interface with Leonardo and test the Code.</p>
+                <p> This is the Code of Sensor to read the Distance</p>
+                <center><img src="graphics/serialcodehc.jpg" style="width:60%"> </center>
+                <p>While Object Near to the target</p>
+                <center><img src="graphics/hcsr.jpg" style="width:60%"> </center>
+                <p> Result on Serial Ploter</p>
+                <center><img src="graphics/serialploter.jpg" style="width:60%"> </center>
+                <p> Now Results on OscilloScop</p>
+                <center><img src="graphics/withoutobject.jpg" style="width:60%"> </center>
+                <p> With the Objects</p>
+                <center><img src="graphics/withobect.jpg" style="width:60%"> </center>
+                <h3> Conclusion</h3>
+                <p> In this Week I have Learned about the PIR  and Distance sensor Workingand Interface withe Leonardo. and find that How sesnor Read the Object or Distance when its near to target.This week very infomative for the Learning.</p>
+                <br>
+				<center> <A HREF="week9.html"> <button type="button" autofocus>Pervious week</button>
+						 <A HREF="index.html"> <button type="button" autofocus>Home</button>	
+						 <A HREF="week10.html"> <button type="button" autofocus>Next week</button> </center>	
+				<br>
+				<center><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License"  src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" style = "width:10%" /></a><br /></center>
+				<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></p>
+				</div>
+
+			
+		</div>
+	</body>
+</html>

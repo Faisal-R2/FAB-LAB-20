@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<link href="styles/style.css" type="text/css" rel="stylesheet" >
+		<title>FAB LAB  - FAISALUL-REHMAN</title>
+	</head>
+	<body>
+		<div id="main">
+			<div id="header">
+				<div id="logo">
+					<a href="http://fab.cba.mit.edu/"><img src= "graphics/logo.png"></a>
+				</div>
+				<div id="header-title">
+					<div id="header-title-text">
+						<div>FAB ACADEMY 2020</div>
+						<div id="bcn"> </div>
+					</div>
+				</div>
+				<div id="bcn-logo">
+					<a href="http://fabacademy.org"><img src="graphics/fab-academy.png" /></a>
+				</div>
+			</div>
+			<hr />
+			<div id="nav-bar">
+				
+					<div class="link"><a href="index.html">Home</a></div><div class="headerDivider" ></div>
+					<div class="link"><a href="final_project.html">Final Project</a></div><div class="headerDivider" ></div>
+					<div class="link"><a href="aboutme.html">About Me</a></div>
+					<div class="clear"></div>		
+			</div>
+			<hr />
+			<div id="MainContainer">
+				<div id="container-title">Output Devices.</div>
+				<div id="ImagesContainer">
+			<br> 
+				<h3> Assignment</h3>
+				<ul>
+				<li>Add an output device to a microcontroller board you've designed and program it to do something.</li>
+				</ul>
+				<h3> My Idea of this Week</h3>
+				<p> In this week I have plan to Work on the Nokia LCD. I will use this LCD in my final Project, that Show the Power and Energy. So I am Using  The NOKIA 5110 LCD. for more detail click here to find the data Sheet of the LCD. <a href="https://components101.com/sites/default/files/component_datasheet/Nokia%205110%20LCD.pdf"> <b> HERE </b> </a></p>
+
+				<p> Nokia LCD 5110:  </p>
+				<p> This is the Nokia LCD which i will used in my output week.</p>
+                <center><img src="graphics/nokialcd.jpg" style="width:60%"> </center>
+                <p> The Pin Diagram of THE NOKIA 5110 LCD and details :</p>
+                <center><img src="graphics/nokiapin.jpg" style="width:60%"> </center>
+
+                <h3> How to use Nokia 5110 Display module: </h3>
+                <p> The Nokia 5110 module is commonly used with Arduino but it can also be used with any microcontroller that supports SPI communication. The module works on 3.3V and hence all the pins are only 3.3V tolerant according to the datasheet. So if you are using a 5V microcontroller (which most of us do) then it is recommended to use a logic level shifter like a potential divider to access the SPI pins of the display module.</p>
+                <p> The graphical LCD shown above is from spark fun, and hence you can find the soldering pad sets on both on top and to the bottom of the LCD of which we can use any desired set. However you can also find many clones in the market with pads on only one side, but still, they have the same pinouts and same functionality so you need not worry about the difference. All clones have the same dimensions (1.72’ × 1.72’) with 6 input pins.</p>
+                <p> You can easily interface Nokia 5110 module with Arduino by following the link and using the readily available libraries. If you are planning to interface with other microcontrollers then you should read through the PCD8544 datasheet to know how to access its registers through SPI. For More detail  and  Help used this Link <a href="https://lastminuteengineers.com/nokia-5110-lcd-arduino-tutorial/"> <b> HERE </b> </a></p>
+
+                <h2> Features of Nokia5110 LCD module: </h2>
+                <li> Operating Voltage is 2.7V to 3.3V.</li>
+                <li>Current consumption is 6mA.</li>
+                <li>Consists of 84 rows and 84 columns (84×48) monochrome pixels.</li>  
+                <li>Works using SPI interface.</li>
+                <li>Consists of Philips PCD8544 interface chip for easy interfacing.</li>
+                <li>Can be easily interfaced with Arduino.</li>
+                <li>Supports decent graphics of bitmap images.</li>
+                <li>Available in Green and Blue Backlight.</li>
+
+                <h2> Applications: </h2>
+                <li>Can be used to display alphanumeric characters and bitmap images.</li>
+                <li>Used in application where fancy graphics are required.</li>
+                <li>Requires only a maximum of 5 pins to operate hence I/O friendly.</li>
+                <li>Comes with a backlight and hence can be used even in darker environment.</li>
+                <li>Can be used to create retro games using microcontrollers.</li>
+                <li>Graphics are decent enough to create a basic UI.</li>
+
+				<h3> Note : </h3>
+				<p>For the this task we have lot of methods of programming , either I have to used the library to run this or I have to used  Manual Programming from with out library. So I will not used any kind of libaray but I will use the Mnaual Programming by define the Pins.</p>
+
+				<h3> Interface of Nokia 5110 LCD With  Micro Controller Board (Leonardo) </h3>
+				<p> This is the Interface Diagram of the LCD with Board</p>
+                <center><img src="graphics/circuitlcd.jpg" style="width:60%"> </center>
+                <p> First of all I will connect the LCD With my Leonardo Board after that I will I will program the Board ar per the connection of the LCD and then test it, If its working then  I will add the <b> INPUT week </b> as a input and that input will display on the LCD. Where in LCD there is two term will Show one is Power in Watts and Energy in Kwh. </p>
+                <h3>  LCD Pins Interface With the Leonardo Board</h3>
+                <p> First of all I have Interface Pins LCd with the Leonardo, In my program I have used these Pins</p>
+                <center> LCD Pins   vs   Leonardo Pins  </center>
+                <center><img src="graphics/lcdpins.jpg" style="width:60%"> </center>
+                <p> Now this is the LCD Connection With Leonardo Board</p>
+                <center><img src="graphics/lcdpower.jpg" style="width:60%"> </center>
+                <p> Now I want program the Leonardo for the LCD, This is the Program</p>
+                <center><img src="graphics/programout.jpg" style="width:60%"> </center>
+                <p> I have Upload the Program in Board </p>
+                <center><img src="graphics/uploadprogram.jpg" style="width:60%"> </center>
+                <p> This the Final result. That Lcd is Working and I will used this LCD Final Project</p>
+                <center><img src="graphics/lcdnokiachar.jpg" style="width:60%"> </center>
+                <p>When Bl pin has zero voltage</p>               
+                <center><img src="graphics/bilpin.jpg" style="width:60%"> </center>
+
+                <h2>Group Assignments</h2>
+                <p> Group assignment: Measure the Power Consumption of an Output Device</p>
+                <p> In this week group we have planed to measure the power Consumption of the Dc motor</p>
+                <h3> How Measure the Power Cosumption</h3>
+                <p> for the calculation of Power , we know that Ohm law , it is stste that "Ohm’s Law states that the current flowing through a conductor is directly proportional to the potential difference applied across its ends, provided the temperature and other physical conditions remain unchanged. Mathematically it can be represented as,"</p>
+                <center><img src="graphics/ohms.jpg" style="width:60%"> </center>
+                <h3> Power Calculation : </h3>
+                <p> The rate at which energy is converted from the electrical energy of the moving charges to some other form of energy like mechanical energy, heat, magnetic fields or energy stored in electric fields, is known as electric power. The unit of power is watt. The electrical power can be calculated using the Ohm’s law and by substituting the values of voltage, current and resistance. linked <a href="https://byjus.com/physics/ohms-law/"> <b> HERE </b> </a></p>
+                <center><img src="graphics/ohmslaw.jpg" style="width:60%"> </center>
+
+                <b> Power formula : </b>
+                <b> Using formula P=VI </b>
+                <li>  Here P = Power </li>
+                <li>   V = voltage </li>
+                <li>I = Current </li>
+                <h2> Experiment : </h2>
+                <p> First, we have select the Dc Motor that Working on the 12.0V voltage, After that we have decide that we use the Digital Multimeter to measure the Voltage and Current and used the Power Calculation Formula to Caculate the Power,The DC water Pump Motor Having these Properties.</p>
+                <center><img src="graphics/dcmotor.jpg" style="width:60%"> </center>
+                <p> Now Connect Motor With Power Supply and Check the Input Voltage by using the Digital Multimeter, while Motor is Runing state: </p>
+                <center><img src="graphics/motorvoltage.jpg" style="width:60%"> </center>
+                <p> After the Voltage Measurement , Now we have  Measure the Current , So We have change the connections of Digital meter, for current we have use the meter as Series Connections. in Series connection meter looks like a Ammeter.</p>
+                <center><img src="graphics/motorcurrent.jpg" style="width:60%"> </center>
+                <p> Now using the Voltage and Current we  Have Calculate the Power for the Power Formula: </p>
+                <center><img src="graphics/powermanual.jpg" style="width:60%"> </center>
+                
+                <h3>Conculsion</h3>
+                <p> In this week, I have Plan to used LCD Nokai as the Output devices , So I Have learned about the Nokia LCD Interface and Programming. This week part of Final Project, in this week we have also measure the power consumption of the DC water Pump Motor.</p>
+
+				<center><h3> <A HREF="file/sahii.rar"> <b> Download All file of this week Here.</b> </A> </h3></center>
+				<br>
+				<center> <A HREF="week10.html"> <button type="button" autofocus>Pervious week</button>
+						 <A HREF="index.html"> <button type="button" autofocus>Home</button>	
+						 <A HREF="week12.html"> <button type="button" autofocus>Next week</button> </center>	
+				<br>	
+				<center><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License"  src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" style = "width:10%" /></a><br /></center>
+				<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></p>.
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

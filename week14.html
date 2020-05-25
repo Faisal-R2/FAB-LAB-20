@@ -1,0 +1,165 @@
+<html>
+	<head>
+		<link href="styles/style.css" type="text/css" rel="stylesheet" >
+		<title>FAB LAB  - FAISALUL-REHMAN</title>
+		<style>
+			.mycodingfont
+			{
+					font-family: "Courier New", Courier, monospace	;
+					border-style: solid;
+					border-width:1px;
+					width:100%;
+					padding:30px;
+			}
+		             </style>
+	                </head>
+	             <body>
+		         <div id="main">
+			<div id="header">
+				<div id="logo">
+					<a href="http://fab.cba.mit.edu/"><img src= "graphics/logo.png"></a>
+				</div>
+				<div id="header-title">
+					<div id="header-title-text">
+						<div>FAB ACADEMY 2020</div>
+						<div id="bcn"> </div>
+					</div>
+				</div>
+				<div id="bcn-logo">
+					<a href="http://fabacademy.org"><img src="graphics/fab-academy.png" /></a>
+				</div>
+			</div>
+			<hr />
+			<div id="nav-bar">
+				
+					<div class="link"><a href="index.html">Home</a></div><div class="headerDivider" ></div>
+					<div class="link"><a href="final_project.html">Final Project</a></div><div class="headerDivider" ></div>
+					<div class="link"><a href="aboutme.html">About Me</a></div>
+					<div class="clear"></div>
+				
+			</div>
+			<hr />
+			<div id="MainContainer">
+				<div id="container-title">Networking and communication</div>
+				<div id="ImagesContainer">
+
+				<br> 
+				<h3> Assignment</h3>
+				<ul>
+					<li>Design and build a wired &/or wireless network connecting at least two processors</li>
+				</ul>
+               <h3> Individual Assignment</h3>
+               <p> In this week task is to  design and build a network connection ,So I have planed to design the ESP-12E Module board.In this week I mentioned the making of programmable ESP-12E board</p>
+             <h3>ESP-12E Module: </h3>
+             <p>ESP-12E is a miniature Wi-Fi module present in the market and is used for establishing a wireless network connection for microcontroller or processor. The core of ESP-12E is ESP8266EX, which is a high integration wireless SoC (System on Chip). It features ability to embed Wi-Fi capabilities to systems or to function as a standalone application. It is a low cost solution for developing IoT applications. For more details and Data Sheet is Available <a href="https://components101.com/sites/default/files/component_datasheet/ESP12E%20Datasheet.pdf"> <b> HERE </b> </a>
+             </li></p>
+             <p> This the Pin DiaGram of the ESP-12E Module.</p>
+             <p> The ESP-12E module has twenty two pins and we will describe function of each pin below.</p>
+              <center><img src="graphics/esppin.jpg" style="width:60%"> </center>
+             <p> ESP-12E Module PIN Configuration</p>
+             <center><img src="graphics/esppindet.jpg" style="width:60%"> </center>
+             <center><img src="graphics/esppindetsecond.JPG" style="width:60%"> </center>
+
+             <h2> Silent Featurs of the ESP-12E Module and Electrical Characterist</h2>
+             <center><img src="graphics/featursesp.jpg" style="width:60%"> </center>
+             <h2> How to use the ESP-12E</h2>
+             <P> This module does not have complex circuitry or programming so using this module is very easy. We will construct a simple application circuit for understanding the module working.</P>
+             <h2> These are the  Steps for setting up a simple application circuit:</h2>
+             <li> Connect positive +3.3V power to the module.</li>
+             <li> Interface module to a microcontroller or ARDUINO using UART (Connect RXD of ESP to RXD of µC & TXD of ESP to TXD of µC).</li>
+             <li> Download the libraries for the module from the internet. For ARDUINO, the IDE will have pre-installed libraries. If you do not have them just update the libraries from ARDUINO website.</li>
+             <li> Write the program for setting up the baud rate and data exchange.</li>
+             <li> Send data to the module for transmitting through Wi-Fi or Receive data from the module that was transmitted via Wi-Fi.</li>
+             <li> There is another way for setting up the module which is to bypass microcontroller and directly connect the module to PC using FTDI. After interface you can use serial monitor to  communicate with the module.</li>
+             <p>This is the Block Diagram of the ESP-12E Module Interface with Micro Controller Board. </p>
+             <center><img src="graphics/espmc.jpg" style="width:60%"> </center>
+             <h3> Applications </h3>
+             <li> Weather station</li>
+             <li>IoT applications</li>
+             <li>Home appliances</li>
+             <li>Toys and Gaming applications</li>
+             <li>Wireless control systems</li>
+             <li>Home automation</li>
+             <li>Security ID tags</li>
+             <h3> PCB Design </h3>
+             <p> First I have Select the Circuit Which i hve to Design in Eagle CAD , After That I have Downlaod the ESP-12E Library from  and upload it on the Eagle CAD Software.<a href="https://handiko.github.io/ESP-12EF-Eagle-Library/"> <b> HERE </b> </a></p>
+             <p> After the research , I have found this Circuit to Design in CAD. </p>
+             <center><img src="graphics/espcirct.jpg" style="width:60%"> </center>
+             <p> After the Adding ESP-12E libraray in Eagle CAD . I have started to work on CAD Section to design the Circuit.</p>
+             <p> This the ESP12E Moudle In Eagle CAD.</p>
+             <center><img src="graphics/cadesp.jpg" style="width:60%"> </center>
+             <p> This the CAD Design Circuit in Eagle Software</p>
+             <center><img src="graphics/espckt.jpg" style="width:60%"> </center>
+             <p> This is Placing of Components in CAD Software</p>
+             <center><img src="graphics/placingesp.jpg" style="width:60%"> </center>
+             <p> This the Complete Routing and Final Board for the Milling</p>
+             <center><img src="graphics/boardesp.jpg" style="width:60%"> </center>
+             <p>These are th Mono chrome Image for the Generating the RML code </p>
+             <center><img src="graphics/espblank.jpg" style="width:60%"> </center>
+             <p> I Have Generated the Code by using MODs So here is Link of  <a href="http://mods.cba.mit.edu/"> <b> MODS-USer </b> </a> </p>
+             <p> By using the MODs , That How we can Generate the RML Code. and this image show  the Trace RML and using the same procedure we can generate the RMl code but only the change is that for the Trace we use the 1/64  Tools and while for the Drill and  Outer we used the 1/32 tools for the Cut.</p>
+             <center><img src="graphics/modesptrc.jpg" style="width:60%"> </center>
+             <p> This the Outer RML COde Generating Methods</p>
+             <center><img src="graphics/espdrll.jpg" style="width:60%"> </center>
+             <p> All RML Code of the Design ESP-12E Module</p>
+             <center><img src="graphics/rmlespcode.jpg" style="width:60%"> </center>
+             <h3>  List of Electrical Component required for the Board</h3>
+             <li> Part  Value Device </li>                                                                                                                  
+                 <li>  C1    4.7uF   </li>                                                                                                                         
+                  <li> C2    4.7uF  </li>                                                                                                                             
+                  <li> Connectors  1x08 </li>
+                  <li> Connectors  1X06  </li>         
+                  <li> R1    10k    </li>                                                                                                    
+                  <li> R2    10k   </li>                                                                                                
+                  <li> R3    10k  </li>                                                                                                      
+                  <li> R4    10k  </li>                                                                                                       
+                  <li> R5  1K         </li>                                                                                                    
+                  <li> 6MM_SWITCH6MM_SWITCH   2   </li>                                                                                                            
+                  <li> LED         1       </li>                                                                                                                      
+                  <li> ESP12E-SMD ESP12E Module </li>                                                                                                            
+                  <li> Voltage Regulator LM1117 </li>    
+             <h3> Milling Process using SRM-20</h3>
+             <p> For the miiling process , I have used the SRM-20 Machine , First I have set the Origion x, y at zero and also set the position od z at zero, then Set the Bit of 1/64 and give the input to the Machine. So first put the Trace file to the machine , after the completing milling process of trace , than I ahve change the tool bit and used 1/32 for the Drill and Outer. this thsi the Final borad after the milling.</p>
+              <center><img src="graphics/espmil.jpg" style="width:60%"> </center>
+             <h3> Soldering Process</h3>
+             <p> Now the prcoess is the Soldering the Board , So I have Switch on the Solder sataion and set the temperature at 480C. First I have Solder the ESP-12E Module then other Components, So this the Final Look of the Board is this.</p>
+             <center><img src="graphics/solderingesp.jpg" style="width:60%"> </center>
+             <h3> Power up the Device</h3>
+             <p> I have Connected ESP-12E Module with FTDI cable and connect with the PC and Power On the ESP-12E .</p>
+             <center><img src="graphics/esppower.jpg" style="width:60%"> </center>
+             <h3> Programing </h3>
+             <p> First of all add the libaray of ESP Wifi module in Ardunio ID , Before doing with programmig I had to include esp8266 libraray which I added as given => File>Preferences => Additional Boards manager <b> URLs: http://arduino.esp8266.com/stable/package_esp8266com_index.json</b> , in Arduino IDE. Later I went to tools selected boards as node mcu 12e module and few other settings.<a href="https://randomnerdtutorials.com/esp8266-web-server/"> <b> VISIT THIS LINK FOR MORE DEATILS </b> </a></p>
+             <center><img src="graphics/addlibesp.jpg" style="width:60%"> </center>
+             <p> This the Installing of Library in Arduino ID</p>
+            <center><img src="graphics/installesp.jpg" style="width:60%"> </center>
+            <p> This the ESP Library which I have Add in Arduino ID </p>
+            <center><img src="graphics/esplibrary.jpg" style="width:60%"> </center>
+            <p> After the Boot load Now ESP-12E board is working. and I have also test the Code.</p>
+            <p> This is the Program Which i have upload the ESP-12E Module , But In code I have change the USER SSID-Guest Smart University and  Passward as per my Netwrok, after that I have Upload it.</p>
+            <center><img src="graphics/ipespcode.jpg" style="width:60%"> </center>
+            <p> Sfter the upload the COde in ESP-Board After that It gernerate the this IP.</p>
+            <center><img src="graphics/ipespgen.jpg" style="width:60%"> </center>
+            <p>  After that I have decide that I ahve to create the Server where I turn on and of the LED , so I have Create the I have Copy the IP and ast on the Webb browser and trun on and of the LED.</p>
+            <center><img src="graphics/espserversecond.jpg" style="width:60%"> </center>
+            <p> While Trun ON and OFF the LED this Result Show on the Serail Moniter Which show the characteristics of the ESP Board.</p>
+            <center><img src="graphics/finalespip.jpg" style="width:60%"> </center>
+            <p> These are the LED Turn On and Off Results</p>
+            <center><img src="graphics/espoffstate.jpg" style="width:60%"> </center>
+            <p> Now the LED is On State so result is Here</p>
+            <center><img src="graphics/espresult.jpg" style="width:60%"> </center>
+            
+             <h3> Conculsion</h3>
+             <p> This week was very Important and Learning week for the netwroking and communication design , I have Design the ESP wifi Module and Learn about the Communication Protocols. This week is more important for the my Final project , While Energy meter Send the Data to web Server where user and Supplier can Moniter Energy Cosumptions.</p>
+              <br>
+				<center> <A HREF="week13.html"> <button type="button" autofocus>Pervious week</button>
+						 <A HREF="index.html"> <button type="button" autofocus>Home</button>	
+						 <A HREF="week15.html"> <button type="button" autofocus>Next week</button> </center>	
+				<br>
+				<center><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License"  src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" style = "width:10%" /></a><br /></center>
+				<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></p>
+				</div>
+
+			</div>			
+		</div>
+	</body>
+</html>
